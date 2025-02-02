@@ -45,22 +45,22 @@ python manage.py runserver
 **Access the admin panel:**
 Create a superuser:
 python manage.py createsuperuser
-Visit http://localhost:8000/admin to manage FAQs.
+Visit http://0.0.0.0:8000/admin to manage FAQs.
 
 API Usage
 Fetch FAQs
 Default (English):
 
 
-curl http://localhost:8000/api/faqs/
+curl http://0.0.0.0:8000/api/faqs/
 Hindi:
 
 
-curl http://localhost:8000/api/faqs/?lang=hi
+curl http://0.0.0.0:8000/api/faqs/?lang=hi
 Bengali:
 
 
-curl http://localhost:8000/api/faqs/?lang=bn
+curl http://0.0.0.0:8000/api/faqs/?lang=bn
 Caching
 The system uses Redis to cache translations. To clear the cache:
 
